@@ -128,11 +128,11 @@ widgets:
         # Author name
         author: THZ
         # Author title
-        author_title: 全栈开发者
+        author_title: 一个初中生
         # Author's current location
         location: 广东
         # URL or path to the avatar image
-        avatar: /img/avatar.png
+        avatar: /img/logo.jpg
         # Whether show the rounded avatar image
         avatar_rounded: true
         # Email address for the Gravatar

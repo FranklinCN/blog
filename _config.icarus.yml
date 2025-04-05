@@ -1,0 +1,279 @@
+# Version of the configuration file
+version: 5.1.0
+# Icarus theme variant, can be "default" or "cyberpunk"
+variant: default
+# Path or URL to the website's logo
+logo:
+    /img/logo.jpg
+# Page metadata configurations
+head:
+    favicon: /img/logo.jpg
+    open_graph:
+        title: THZ' Blog
+        type: blog
+        url: http://thzstudent.top
+        image: /img/logo.jpg
+        site_name: THZ' Blog
+        description: 个人博客
+    structured_data:
+        title: THZ' Blog
+        description: 个人博客
+        url: http://thzstudent.top
+        author: THZ
+# Page top navigation bar configurations
+navbar:
+    # Navigation menu items
+    menu:
+        首页: /
+        归档: /archives
+        分类: /categories
+        标签: /tags
+        关于: /about
+    # Links to be shown on the right of the navigation bar
+    links:
+        在GitHub上下载:
+            icon: fab fa-github
+            url: https://github.com/ppoffice/hexo-theme-icarus
+# Page footer configurations
+footer:
+    copyright: "© 2024 THZ"
+    links:
+        知乎:
+            icon: fab fa-zhihu
+            url: https://www.zhihu.com/people/THZ
+        GitHub:
+            icon: fab fa-github
+            url: https://github.com/THZheng
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/
+        "Attribution 4.0 International":
+            icon: fab fa-creative-commons-by
+            url: https://creativecommons.org/licenses/by/4.0/
+        Download on GitHub:
+            icon: fab fa-github
+            url: https://github.com/ppoffice/hexo-theme-icarus
+# Article related configurations
+article:
+    # Code highlight settings
+    highlight:
+        # Code highlight themes
+        # https://github.com/highlightjs/highlight.js/tree/master/src/styles
+        theme: atom-one-light
+        # Show copy code button
+        clipboard: true
+        # Default folding status of the code blocks. Can be "", "folded", "unfolded"
+        fold: unfolded
+    # Whether to show estimated article reading time
+    readtime: true
+    # Whether to show updated time. For "auto", shows article update time only when page.updated is set and it is different from page.date
+    update_time: true
+    # Article licensing block
+    licenses:
+        Creative Commons:
+            icon: fab fa-creative-commons
+            url: https://creativecommons.org/
+        Attribution:
+            icon: fab fa-creative-commons-by
+            url: https://creativecommons.org/licenses/by/4.0/
+        Noncommercial:
+            icon: fab fa-creative-commons-nc
+            url: https://creativecommons.org/licenses/by-nc/4.0/
+# Search plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Search/
+search:
+    type: insight
+    # Whether to include pages in the search results
+    index_pages: true
+# Comment plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Comment/
+comment:
+    type: gitalk
+    client_id: "Iv23liW1wydDNr5zX3fH" # 请替换为您的GitHub Application的client_id
+    client_secret: "3174f312ac653cb31ab61d2eeefe49add651714d" # 请替换为您的GitHub Application的client_secret
+    repo: "blog" # 存储评论的仓库名
+    owner: "FranklinCN" # 仓库所有者用户名
+    admin: ["FranklinCN"] # 仓库管理员用户名
+    language: "zh-CN" # 语言设置
+    distraction_free_mode: false # 无干扰模式
+# Share plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/Share/
+share:
+    type: sharejs
+    # URL to the ShareThis share plugin script
+    install_url: '//platform-api.sharethis.com/js/sharethis.js#property=5ab6f60ace89f00013641890&product=inline-share-buttons'
+    # URL to the ShareThis share plugin script
+    cdn: 'https://cdn.jsdelivr.net/npm/share.js@1.0.2/dist/js/share.min.js'
+    # Share plugin options
+    options: {}
+# Sidebar configurations.
+# Please be noted that a sidebar is only visible when it has at least one widget
+sidebar:
+    # Left sidebar configurations
+    left:
+        # Whether the sidebar sticks to the top when page scrolls
+        sticky: false
+    # Right sidebar configurations
+    right:
+        # Whether the sidebar sticks to the top when page scrolls
+        sticky: false
+# Sidebar widget configurations
+# http://ppoffice.github.io/hexo-theme-icarus/categories/Widgets/
+widgets:
+    # Profile widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: profile
+        # Author name
+        author: THZ
+        # Author title
+        author_title: 全栈开发者
+        # Author's current location
+        location: 广东
+        # URL or path to the avatar image
+        avatar: /img/avatar.png
+        # Whether show the rounded avatar image
+        avatar_rounded: true
+        # Email address for the Gravatar
+        gravatar: 
+        # URL or path for the follow button
+        follow_link: https://github.com/FranklinCN
+        # Links to be shown on the bottom of the profile widget
+        social_links:
+            Github:
+                icon: fab fa-github
+                url: https://github.com/FranklinCN
+    # Table of contents widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: toc
+        # Whether to show the index of each heading
+        index: true
+        # Whether to collapse sub-headings when they are out-of-view
+        collapsed: true
+        # Maximum level of headings to show (1-6)
+        depth: 3
+    # Recommendation links widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: links
+        # Names and URLs of the sites
+        links:
+            Hexo: https://hexo.io
+            Bulma: https://bulma.io
+    # Categories widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: categories
+    # Recent posts widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: recent_posts
+    # Archives widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: archives
+    # Tags widget configurations
+    -
+        # Where should the widget be placed, left sidebar or right sidebar
+        position: left
+        type: tags
+        # How to order tags. For example 'name' to order by name in ascending order, and '-length' to order by number of posts in each tags in descending order
+        order_by: name
+        # Amount of tags to show. Will show all if not set.
+        amount: 
+        # Whether to show tags count, i.e. number of posts in the tag.
+        show_count: true
+
+# Plugin configurations
+# https://ppoffice.github.io/hexo-theme-icarus/categories/Plugins/
+plugins:
+    # Enable page startup animations
+    animejs: true
+    # Show the "back to top" button
+    back_to_top: true
+    # Baidu Analytics plugin settings
+    # https://tongji.baidu.com
+    baidu_analytics:
+        # Baidu Analytics tracking ID
+        tracking_id: 
+    # Bing Webmaster Tools plugin settings
+    # https://www.bing.com/toolbox/webmaster/
+    bing_webmaster:
+        # Bing Webmaster Tools tracking ID in the <meta> tag
+        tracking_id: 
+    # BuSuanZi site/page view counter
+    # https://busuanzi.ibruce.info
+    busuanzi: false
+    # CNZZ statistics
+    # https://www.umeng.com/web
+    cnzz:
+        # CNZZ tracker id
+        id: 
+        # CNZZ website id
+        web_id: 
+    # Alerting users about the use of cookies
+    # https://www.osano.com/cookieconsent/
+    cookie_consent:
+        # The compliance type. Can be "info", "opt-in", or "opt-out"
+        type: info
+        # Theme of the popup. Can be "block", "edgeless", or "classic"
+        theme: edgeless
+        # Whether the popup should stay static regardless of the page scrolls
+        static: false
+        # Where on the screen the consent popup should display
+        position: bottom-left
+        # URL to your site's cookie policy
+        policyLink: https://www.cookiesandyou.com/
+    # Enable the lightGallery and Justified Gallery plugins
+    gallery: true
+    # Google Analytics plugin settings
+    # https://analytics.google.com
+    google_analytics:
+        # Google Analytics tracking ID
+        tracking_id: 
+    # Hotjar user feedback plugin
+    # https://www.hotjar.com/
+    hotjar:
+        # Hotjar site id
+        site_id: 
+    # Enable the KaTeX math typesetting support
+    # https://katex.org/
+    katex: false
+    # Enable the MathJax math typesetting support
+    # https://www.mathjax.org/
+    mathjax: false
+    # Enable the Outdated Browser plugin
+    # http://outdatedbrowser.com/
+    outdated_browser: false
+    # Enable PJAX
+    pjax: true
+    # Show a progress bar at top of the page on page loading
+    progressbar: true
+    # Statcounter statistics
+    # https://statcounter.com/
+    statcounter:
+        # Statcounter project id
+        project: 
+        # Statcounter project security code
+        security: 
+    # Twitter conversion tracking plugin settings
+    # https://business.twitter.com/en/help/campaign-measurement-and-analytics/conversion-tracking-for-websites.html
+    twitter_conversion_tracking:
+        # Twitter Pixel ID
+        pixel_id: 
+# CDN provider settings
+# https://ppoffice.github.io/hexo-theme-icarus/Configuration/Theme/speed-up-your-site-with-custom-cdn/
+providers:
+    # Name or URL template of the JavaScript and/or stylesheet CDN provider
+    cdn: jsdelivr
+    # Name or URL template of the webfont CDN provider
+    fontcdn: google
+    # Name or URL of the fontawesome icon font CDN provider
+    iconcdn: fontawesome

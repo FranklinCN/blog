@@ -1,4 +1,0 @@
-[submodule "themes/icarus"]
-    path = themes/icarus
-    url = https://github.com/ppoffice/hexo-theme-icarus.git
-    branch = master  # 明确指定分支
